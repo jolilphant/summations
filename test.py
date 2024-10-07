@@ -3,8 +3,7 @@ import subprocess
 
 def test_while_summation():
     # Set up the test input (number to sum up to)
-    test_input = str(random.randint(100)) + "\n
-
+    test_input = str(random.randint(100)) + "\n"
     n = int(test_input)
     # Expected output (sum of numbers from 1 n)
     
@@ -25,7 +24,7 @@ def test_while_summation():
 def test_for_summation():
     # Set up the test input (number to sum up to)
     test_input = str(random.randint(100)) + "\n"
-     n = int(test_input)
+    n = int(test_input)
     
     # Expected output (sum of numbers from 1 to 5)
     expected_output = str(n*n/2) + "\n"
