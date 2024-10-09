@@ -2,7 +2,7 @@ import random
 import subprocess
 import pytest
 
-def test_while_summation():
+def test_while():
     # Set up the test input (number to sum up to)
     test_input = str(random.randint(1,100)) + "\n"
     n = int(test_input)
@@ -22,7 +22,7 @@ def test_while_summation():
     # Assert if the output is as expected
     assert result.stdout.strip() == expected_output.strip(), f"Expected {expected_output}, but got {result.stdout.strip()}"
 
-def test_for_summation():
+def test_for():
     # Set up the test input (number to sum up to)
     test_input = str(random.randint(1,100)) + "\n"
     n = int(test_input)
