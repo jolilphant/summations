@@ -34,7 +34,7 @@ def test_for_summation():
     # Make sure this path matches the path where student scripts are stored
     print("testing")
     result = subprocess.run(
-        ['python3', 'summation_for.py'],  # Adjust this to the specific student script file
+        ['python3', 'for_summation.py'],  # Adjust this to the specific student script file
         input=test_input,
         text=True,
         capture_output=True
