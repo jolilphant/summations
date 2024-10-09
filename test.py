@@ -32,7 +32,6 @@ def test_for_summation():
 
     # Run the student's script and capture output
     # Make sure this path matches the path where student scripts are stored
-    print("testing")
     result = subprocess.run(
         ['python3', 'for_summation.py'],  # Adjust this to the specific student script file
         input=test_input,
@@ -41,5 +40,4 @@ def test_for_summation():
     )
 
     # Assert if the output is as expected
-    #assert result.stdout.strip() == expected_output.strip(), f"Expected {expected_output}, but got {result.stdout.strip()}"
-    print(result)
+    assert result.stdout.strip() == expected_output.strip(), f"Expected {expected_output}, but got {result.stdout.strip()}"
